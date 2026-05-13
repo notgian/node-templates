@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1"> 
+        <!-- Title is provided in the handlebars render function -->
+        <title> {{ title }} </title>
+
+        <!-- css files provided handlebars render function -->
+        {{#each css}}
+            <link href="{{this}}" rel="stylesheet">
+        {{/each}}
+        <link href="/css/styles.css" rel="stylesheet">
+
+        <!-- js files provided handlebars render function -->
+        {{#each js}}
+            <script defer src="{{this}}"></script>
+        {{/each}}
+        <script defer src="/js/scripts.js"></script>
+
+        <!-- fontawesome kit that I can use -->
+        <link href=" https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap " rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6c93d5a3f5.js" crossorigin="anonymous"></script>
+
+        <!-- for setting the favicon icon -->
+        <!-- link rel="icon" href="" type="image/x-icon" -->
+    </head>
+    <body>
+        {{{ body }}}
+    </body>
+</html>
+

@@ -1,0 +1,1 @@
+/* JavaScript file for global JS functions that will be imported on all pages */
